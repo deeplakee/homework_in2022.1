@@ -1,10 +1,9 @@
 #include <math.h>
 #include "head.h"
-long long up_ipaddress_to_ipnum(char arr1[4],char arr2[4],char arr3[4],char arr4[4],char arr5[4])
+long long up_ipaddress_to_ipnum(int a1,int a2,int a3,int a4,int a5)
 {
 	long long ipad=0;
 	char ipad1[9],ipad2[9],ipad3[9],ipad4[9];
-	int a1=arr_to_10(arr1),a2=arr_to_10(arr2),a3=arr_to_10(arr3),a4=arr_to_10(arr4),a5=arr_to_10(arr5);
 	num_10_to_2_8(a1,ipad1);
 	num_10_to_2_8(a2,ipad2);
 	num_10_to_2_8(a3,ipad3);

@@ -1,3 +1,4 @@
+#include <string.h>
 int arr_to_10(char arr[4]) {
 	int length = strlen(arr), num = 0;
 	int i;
