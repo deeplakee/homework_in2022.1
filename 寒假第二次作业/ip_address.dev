@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=4
 CompilerSettings=000000e100000000001000000
-UnitCount=5
+UnitCount=6
 
 [VersionInfo]
 Major=1
@@ -91,7 +91,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=fun_ipadress_to_ipnum.c
+FileName=fun_up_ipaddress_to_ipnum.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -101,7 +101,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=fun_ipaddress_to_ipnum.c
+FileName=fun_down_ipaddress_to_ipnum.c
 CompileCpp=0
 Folder=
 Compile=1
