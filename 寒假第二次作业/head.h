@@ -18,9 +18,9 @@ int ddown,int eup,int edown,int i);//用于匹配数据与规则
 		long long up_ip_d;//目的IP地址上限
 		long long down_ip_d;//目的IP地址下限
 		int up_port_s;//源端口上限
-		int down_port_s;//源端口下线
+		int down_port_s;//源端口下限
 		int up_port_d;//目的端口上限
-		int down_port_d;//目的端口下线
+		int down_port_d;//目的端口下限
 		int up_agreement;//协议上限
 		int down_agreement;//协议下限
 	} rulefile[1000];
