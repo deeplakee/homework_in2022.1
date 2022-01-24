@@ -11,18 +11,6 @@ int main() {
 	FILE *fp3;//输出文件指针
 	int sign1;//判断读取文件是否结束
 	fp2 = fopen(file2, "r"); //打开规则集文件，只读模式
-	struct rulelist { //定义结构体存放规则集数据
-		long long up_ip_s;//源IP地址上限
-		long long down_ip_s;//源IP地址下限
-		long long up_ip_d;//目的IP地址上限
-		long long down_ip_d;//目的IP地址下限
-		int up_port_s;//源端口上限
-		int down_port_s;//源端口下线
-		int up_port_d;//目的端口上限
-		int down_port_d;//目的端口下线
-		int up_agreement;//协议上限
-		int down_agreement;//协议下限
-	} rulefile[1000];
 	int i = 0; //计数器，记录规则条数
 	int rul_ip1, rul_ip2, rul_ip3, rul_ip4, sign_ip1; //源IP的四个部分和网络前缀
 	int rul_ip5, rul_ip6, rul_ip7, rul_ip8, sign_ip2; //目的IP的四个部分和网络前缀
