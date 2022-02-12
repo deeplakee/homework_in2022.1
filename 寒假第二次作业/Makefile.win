@@ -4,8 +4,8 @@
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = main.o fun_down_ipaddress_to_ipnum.o fun_up_ipaddress_to_ipnum.o fun_match.o fun_num_10_to_2_8.o
-LINKOBJ  = main.o fun_down_ipaddress_to_ipnum.o fun_up_ipaddress_to_ipnum.o fun_match.o fun_num_10_to_2_8.o
+OBJ      = main.o fun_down_ipaddress_to_ipnum.o fun_up_ipaddress_to_ipnum.o fun_match.o fun_num_10_to_2_8.o fun_packet_classify.o
+LINKOBJ  = main.o fun_down_ipaddress_to_ipnum.o fun_up_ipaddress_to_ipnum.o fun_match.o fun_num_10_to_2_8.o fun_packet_classify.o
 LIBS     = -L"D:/software/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib32" -static-libgcc -m32 -g3
 INCS     = -I"D:/software/Dev-Cpp/TDM-GCC-64/include" -I"D:/software/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/software/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
 CXXINCS  = -I"D:/software/Dev-Cpp/TDM-GCC-64/include" -I"D:/software/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/software/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/software/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
@@ -38,3 +38,6 @@ fun_match.o: fun_match.c
 
 fun_num_10_to_2_8.o: fun_num_10_to_2_8.c
 	$(CC) -c fun_num_10_to_2_8.c -o fun_num_10_to_2_8.o $(CFLAGS)
+
+fun_packet_classify.o: fun_packet_classify.c
+	$(CC) -c fun_packet_classify.c -o fun_packet_classify.o $(CFLAGS)
